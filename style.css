@@ -1,0 +1,207 @@
+/*Para resetar alguns estilos: */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* AQUI MUDA : FOR BUSINESS, CONTINUE, REMOVER CONTA, */
+    font-size: 14px;
+}
+
+body { 
+    width: 100%; /* largura */
+    min-height: 100vh;
+    background-color:rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper { /* ele está dividido em dois centrais : <div class="instagram-phone">  E <div class="instagram-contin">*/
+    display: flex; /*é um conteiner que a formatação sempre vão ficar em linha*/
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
+    background-color: #13293d;
+}
+
+.instagram-loja { /* 1ª DIVISÃO <div class="instagram-phone">*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffffff;
+    height: 100%;
+    flex-direction: column;
+    
+    
+}
+
+.instagram-loja img {
+    height: 40rem;
+}
+
+.instagram-continue { /* 2ª DIVISÃO <div class="instagram-phone">*/
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 100%; /*se ficar 50% ocupa metade da metade*/
+    min-width: 50%;
+    min-height: 30rem ;
+    background-color: #ffffffff;
+    
+}
+
+.group {
+ /* Aqui fica 3 BLOCOS:as logos a foto de perfil , os botões continue e remover conta, Não é gabriela, alterar contas ou inscreva-se */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid white;
+    
+}
+
+.group:nth-child(1) { /* Aqui fica as logos, a foto de perfil os botões continue e remover conta */
+    min-height: 19rem;
+    background-color: #ffffffff;
+    width: 60%;
+    margin-block: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.instagram-logo {
+    height: 4rem;
+    
+}
+.business-logo {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    margin-top: 0;
+    height: 5rem;
+}
+
+.business-logo img {
+    height: 10rem;
+}
+
+.business {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    margin-top: 0;
+    height: 2rem;
+
+}
+
+.business img{
+    height: 7rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+    
+}
+.profile-photo img {
+    height: 8rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffffff;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+
+.group:nth-child(2) { /* aqui tem outra caixa*/
+    background-color: #ffffffff;
+    width: 60%;
+
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+     color: #0095f6;
+}
+
+.get-the-app { /* aqui tem outra caixa*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    background-color: #ffffffff;   
+}
+.get-app {
+    color: rgb(160, 160, 160)
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem ;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url("./apple-button.png")
+}
+    
+.app-download:nth-child(2) {
+    background-image: url("./googleplay-button.png");
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-color: #ffffffff;
+    }
+    
+    .instagram-wrapper {
+        width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+}
